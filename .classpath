@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="E:/jars/mysql-connector-java-commercial-5.1.27-bin.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="E:/jars/Couchbase-Java-Client-1.4.3/couchbase-client-1.4.3.jar"/>
+	<classpathentry kind="lib" path="E:/jars/Couchbase-Java-Client-1.4.3/spymemcached-2.11.4.jar"/>
+	<classpathentry kind="lib" path="E:/jars/Couchbase-Java-Client-1.4.3/commons-codec-1.5.jar"/>
+	<classpathentry kind="lib" path="E:/jars/Couchbase-Java-Client-1.4.3/httpcore-4.3.jar"/>
+	<classpathentry kind="lib" path="E:/jars/Couchbase-Java-Client-1.4.3/httpcore-nio-4.3.jar"/>
+	<classpathentry kind="lib" path="E:/jars/Couchbase-Java-Client-1.4.3/jettison-1.1.jar"/>
+	<classpathentry kind="lib" path="E:/jars/Couchbase-Java-Client-1.4.3/netty-3.5.5.Final.jar"/>
+	<classpathentry kind="lib" path="E:/jars/commons/commons-httpclient-3.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
