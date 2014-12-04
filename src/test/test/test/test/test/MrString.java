@@ -46,5 +46,6 @@ public class MrString {
 		for (int i = 0; i < marks2.length; i ++) {
 			System.out.println(marks2[i]);
 		}
+		
 	}
 }
