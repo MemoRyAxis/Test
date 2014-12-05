@@ -16,6 +16,21 @@ public class MrFile {
 		MrFile.getAllFile(filePath, fileName);
 
 		System.out.println("--->\t *** ***");
+		
+		File f1 = new File("D:\\vm\\save\\");
+		System.out.println(f1.exists());
+		System.out.println(f1.isDirectory());
+		System.out.println(f1.isFile());
+		System.out.println(f1.getParent());
+		System.out.println(f1.getName());
+		File f2 = new File("D:\\vm\\1-1.vm.dat");
+		System.out.println(f2.exists());
+		System.out.println(f2.isDirectory());
+		System.out.println(f2.isFile());
+		System.out.println(f2.getParent());
+		System.out.println(f2.getName());
+		
+		System.out.println("--->\t *** ***");
 	}
 
 	/**
