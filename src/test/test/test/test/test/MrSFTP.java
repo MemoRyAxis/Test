@@ -11,7 +11,7 @@ import com.jcraft.jsch.Session;
 import com.jcraft.jsch.SftpException;
 import com.jcraft.jsch.SftpProgressMonitor;
 
-public class MRSFTP {
+public class MrSFTP {
 	
 	public static void main(String[] args) throws SftpException {
 		
@@ -43,7 +43,7 @@ public class MRSFTP {
 //		
 //		me.disConnect();
 		
-		MRSFTP sftp = new MRSFTP();
+		MrSFTP sftp = new MrSFTP();
 		sftp.setHost("192.168.30.199");
 		sftp.setUserName("bank");
 		sftp.setPassword("BwZbJmSwZosWYw");
@@ -102,7 +102,7 @@ public class MRSFTP {
 //	private static Map<String, Object> cache = new HashMap<>();
 //	private static List<ChannelSftp> channelPool = new ArrayList<>();
 	
-	public MRSFTP() {
+	public MrSFTP() {
 		jSch = new JSch();
 		
 		prvKey = "";

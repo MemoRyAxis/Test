@@ -1,6 +1,6 @@
 package test.test.test.test.test;
 
-public class MRIO {
+public class MrIO {
 
 	public static void main(String[] args) {
 		System.out.println(0 << 24);
