@@ -14,6 +14,12 @@ public class MrString {
 		String dot2 = "dot";
 		System.out.println(dot.split(",")[0]);
 		System.out.println(dot2.split(",")[0]);
+		String dot3= "";
+		for (int i = 0; i < 3; i ++) {
+			dot3 += i + "!" + i	 + ",";
+		}
+		System.out.println(dot3);
+		System.out.println(dot3.split(",").length);
 		
 		// length
 		String s = "E:\\workspace0604\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\agent\\notice_attachment\\20130927023532195dbf.jpg";
@@ -57,5 +63,20 @@ public class MrString {
 		System.out.println(dd.compareTo(now));
 		System.out.println(d2.compareTo(dd));
 		
+		@SuppressWarnings("unused")
+		String newString = "";
+		int count = 10000000;
+		long startTime = System.currentTimeMillis();
+		while (count-- > 0) {
+			newString = String.valueOf(count);	// 600ms
+			newString = count + "";				// 1323ms
+		}
+		long endTime = System.currentTimeMillis();
+		System.out.println(endTime - startTime);
+		
+		// regular 
+		String reg = "563981441";
+		String arc = "a;dkfja;dfkjp;kj563981441;alkdfja;ldkj";
+		System.out.println(arc.contains(reg));
 	}
 }
