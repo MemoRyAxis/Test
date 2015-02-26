@@ -1,6 +1,7 @@
 package test.test.test.test.test;
 
 import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -46,6 +47,15 @@ public class MrString {
 		for (int i = 0; i < marks2.length; i ++) {
 			System.out.println(marks2[i]);
 		}
+		
+		// compare to 
+		String now = new SimpleDateFormat("yyyy-MM-dd").format(new java.util.Date());
+		String dd = "2014-12-13";
+		String d2 = dd;
+		System.out.println("--->\t compare to");
+		System.out.println(now.compareTo(dd));
+		System.out.println(dd.compareTo(now));
+		System.out.println(d2.compareTo(dd));
 		
 	}
 }
