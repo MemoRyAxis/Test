@@ -39,9 +39,9 @@ public class MrString {
 		// map to string
 		Map<String, String> map = new HashMap<String, String>();
 
-		map.put("1", "机构1");
-		map.put("2", "机构2");
-		map.put("3", "机构3");
+		map.put("1", "鏈烘瀯1");
+		map.put("2", "鏈烘瀯2");
+		map.put("3", "鏈烘瀯3");
 		
 		// string to integer
 		Integer a1 = new Integer("01");
@@ -78,5 +78,15 @@ public class MrString {
 		String reg = "563981441";
 		String arc = "a;dkfja;dfkjp;kj563981441;alkdfja;ldkj";
 		System.out.println(arc.contains(reg));
+		
+		
+		// Capture String
+		String cap = "captureName";
+		String cap1 = cap.substring(0, 1).toUpperCase() + cap.substring(1);
+		char[] capArr = cap.toCharArray();
+		capArr[0] -= 32;
+		String cap2 = String.valueOf(capArr);
+		System.out.println(cap1);
+		System.out.println(cap2);
 	}
 }
