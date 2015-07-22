@@ -20,5 +20,8 @@ public class MrNumber {
 			}
 			System.out.println();
 		}
+		
+		double d1 = 123.0000;
+		System.out.println(d1 == (int) d1);
 	}
 }

@@ -88,5 +88,39 @@ public class MrString {
 		String cap2 = String.valueOf(capArr);
 		System.out.println(cap1);
 		System.out.println(cap2);
+		
+		
+		// replace
+		String repl2 = "[123321]";
+		repl2.contains("[");
+		char[] repl2c = repl2.toCharArray();
+		char[] repl3c = new char[repl2.length()];
+		int cursor = 0;
+		for (char c : repl2c) {
+			if (c == '[' || c == ']')
+				continue;
+			repl3c[cursor++] = c;
+		}
+		System.out.println(repl3c.length);
+		System.out.println(repl3c);
+		repl2 = new String(repl3c).trim();
+		System.out.println(repl2);
+		
+		
+		// onmmno
+		String onmmno = "nmmno";
+		for (int j = 50; j > 0; j--) {
+		for (int i = 0; i < 100; i++) {
+			System.out.print(onmmno);
+		}
+		System.out.println();
+		}
+		
+		boolean bool = true;
+		System.out.println(bool);
+		
+		// index of 
+		String tickets = "ticaket=HJKJHJHticket";
+		System.out.println(tickets.indexOf("ticket"));
 	}
 }

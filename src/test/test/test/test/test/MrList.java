@@ -8,5 +8,7 @@ public class MrList {
 	public static void main(String[] args) {
 		List<Object> list = new ArrayList<Object>();
 		System.out.println(list.size());
+		list.add("1");
+		System.out.println(list.get(0));
 	}
 }

@@ -5,6 +5,8 @@ import java.util.Calendar;
 public class MrDate {
 
 	public static void main(String[] args) {
+		System.out.println("1432137600000");
+		System.out.println(System.currentTimeMillis());
 		Calendar cd = Calendar.getInstance();
 		int th = cd.get(Calendar.DAY_OF_WEEK);
 		
@@ -14,6 +16,32 @@ public class MrDate {
 		for (MrWeek week : MrWeek.values()) {
 			System.out.println(week.getIndex() + week.getName());
 		}
+		System.out.println(getNowStartMonth());
+		
+		
+		
+		Calendar cal = Calendar.getInstance();
+		cal.add(Calendar.DATE, -1);
+		System.out.println(cal.getTime());
+	}
+
+	public static String getNowStartMonth() {
+		Calendar calendar = Calendar.getInstance();
+		calendar.add(Calendar.MONTH, -0);
+		int year = calendar.get(Calendar.YEAR);
+		int month = calendar.get(Calendar.MONTH) + 1;
+		int day = calendar.get(Calendar.DAY_OF_MONTH);
+		if (day == 1) {
+			return getBeforeMonth(1);
+		}
+		return year + (month < 10 ? "0" + month : month).toString() + "01";
+	}
+	public static String getBeforeMonth(int b_month) {
+		Calendar calendar = Calendar.getInstance();
+		calendar.add(Calendar.MONTH, -b_month);
+		int year = calendar.get(Calendar.YEAR);
+		int month = calendar.get(Calendar.MONTH) + 1;
+		return year + (month < 10 ? "0" + month : month).toString() + "01";
 	}
 }
 

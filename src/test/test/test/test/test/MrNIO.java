@@ -1,6 +1,7 @@
 package test.test.test.test.test;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.RandomAccessFile;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
@@ -8,6 +9,11 @@ import java.nio.channels.FileChannel;
 public class MrNIO {
 
 	public static void main(String[] args) throws IOException {
+		
+		InputStream in1 = MrNIO.class.getResourceAsStream("NewFile.jsp");
+		System.out.println(in1 == null);
+		
+		
 		RandomAccessFile file = new RandomAccessFile("F:\\blog-mg\\regulars", "rw");
 		RandomAccessFile file2 = new RandomAccessFile("F:\\blog-mg\\_blog-mg_out", "rw");
 		System.out.println("你妹".length());
