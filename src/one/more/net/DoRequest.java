@@ -114,25 +114,9 @@ public class DoRequest {
 	}
 
 	public static void main(String[] args) throws Exception {
-		String str = 
-"https://sso.100credit.com/serviceValidate?ticket=ST-7-4DsGOBknpxSs9WEpfchl-cas&service=http%3A%2F%2Fidata.100credit.com%2Flogin.action";
-		URL url = new URL(str);
-		String u2 = DoRequest.sendGet(url.getProtocol() + "://" + url.getAuthority() + url.getPath(), url.getQuery());
-		String u3 = DoRequest.sendGet(url.getProtocol() + "://" + url.getAuthority() + url.getPath(), url.getQuery());
-		String u4 = DoRequest.sendGet(url.getProtocol() + "://" + url.getAuthority() + url.getPath(), url.getQuery());
-		String u5 = DoRequest.sendGet(url.getProtocol() + "://" + url.getAuthority() + url.getPath(), url.getQuery());
-		String u6 = DoRequest.sendGet(url.getProtocol() + "://" + url.getAuthority() + url.getPath(), url.getQuery());
-		
-		System.out.println(u2);
-		System.out.println(u3);
-		System.out.println(u4);
-		System.out.println(u5);
-		System.out.println(u6);
-		
-//		
-//		String str = DoRequest.sendGet( "https://shenpi.100credit.com/tarzan/createFlowRuleController/creatFlowRule.do",
-//						"&username=jinyuanbao_test&password=jinyuanbao_test&user_name=jinyuanbao_test&merchat_name=jinyuanbao_test&api_code=jinyuanbao_test&purchase_json={\"auth\":1,\"sensitive\":{\"purchase_flag\":1,\"A0\":1,\"C1\":1,\"D1\":1,\"E1\":1},\"score\":1}");
-//		System.out.println("\n" + str);
+		String str = DoRequest.sendGet( "https://shenpi.100credit.com/tarzan/createFlowRuleController/creatFlowRule.do",
+		    "username=审批测试&password=shenpiza&user_name=shenpiza&merchat_name=穆萌测试&api_code=100092&purchase_json={\"auth\":1,\"sensitive\":{\"purchase_flag\":1,\"A0\":0,\"A3\":1,\"A5\":1,\"A6\":1,\"A7\":1,\"B0\":1,\"B3\":1,\"B5\":1,\"B6\":1,\"E1\":0},\"score\":{\"status\":1,\"type\":\"brcreditpoint\",\"level\":1},\"webAction\":1,\"accountChange\":1,\"moreLoan\":{\"A4\":3,\"B4\":3}}&param=2");
+		System.out.println("\n" + str);
 		// DoRequest.sendGet("http://shenpi.100credit.com/tarzan/createFlowRuleController/creatFlowRule.do",
 		// "&username=jinyuanbao_test&password=jinyuanbao_test&user_name=jinyuanbao_test&merchat_name=jinyuanbao_test&api_code=jinyuanbao_test&purchase_json={\"auth\":1,\"sensitive\":{\"purchase_flag\":1,\"A0\":1,\"C1\":1,\"D1\":1,\"E1\":1},\"score\":1}");
 	}

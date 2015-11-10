@@ -8,6 +8,14 @@ import java.util.Map;
 public class MrString {
 
 	public static void main(String[] args) {
+	    
+	    // int Integer
+	    Integer a = null;
+	    int b = a;
+	    System.out.println(b);
+	    
+	    // whitespace 
+	    System.out.println(String.format("%-32s", "123"));
 		
 		// split
 		String dot = "dot, dot";

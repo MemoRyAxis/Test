@@ -1,10 +1,15 @@
 package test.test.test.test.test;
 
 import java.util.Calendar;
+import java.util.Date;
 
 public class MrDate {
 
 	public static void main(String[] args) {
+
+	    System.out.println(new Date(1443420045652L));
+	    System.out.println(new Date(1443412736426L));
+	    
 		System.out.println("1432137600000");
 		System.out.println(System.currentTimeMillis());
 		Calendar cd = Calendar.getInstance();
