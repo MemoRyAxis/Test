@@ -141,6 +141,10 @@ public class MrCompress {
 		// String dirPath = "D:\\vm";
 
 		File file = new File(filePath);
+		if (!file.exists()) {
+		    file.createNewFile();
+		}
+		        
 		File zipFile = new File("D:\\vm.zip");
 
 		System.out.println("--->*\t gen vm.zip");

@@ -9,6 +9,9 @@ public class MrString {
 
 	public static void main(String[] args) {
 	    
+	    System.out.println("" + null);
+	    System.out.println(((String)null).equals("null"));
+	    
 	    // int Integer
 	    Integer a = null;
 	    int b = a;
