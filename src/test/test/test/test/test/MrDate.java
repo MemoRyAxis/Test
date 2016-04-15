@@ -4,10 +4,16 @@ import java.util.Calendar;
 import java.util.Date;
 
 import org.joda.time.DateTime;
+import org.joda.time.format.DateTimeFormat;
 
 public class MrDate {
 
 	public static void main(String[] args) {
+	    
+	    String format = "dd-MMM-yy hh.mm.ss.SSSSSSSSS a";
+	    String value = "08-APR-10 08.05.59.000000000 PM";
+	    DateTime dt0 = DateTimeFormat.forPattern(format).parseDateTime(value);
+	    System.out.println(dt0.toString("yyyy-MM-dd hh:mm:ss"));
 	    
 	    DateTime dt = new DateTime();
 

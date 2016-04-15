@@ -37,7 +37,7 @@ public class MrCell {
         FileReader reader = new FileReader("D:\\blackList.data");
         BufferedReader br = new BufferedReader(reader);
 
-        FileWriter writer = new FileWriter("D:\\dcp.blackList.data");
+        FileWriter writer = new FileWriter("D:\\dcp.blackList.data2");
         BufferedWriter bw = new BufferedWriter(writer);
 
         String str = null;
@@ -108,8 +108,8 @@ public class MrCell {
 
             if (imint < 1) {
                 result = 2;
-            } else if (imint < 6) {
-                result = imint * 3;
+//            } else if (imint < 6) {
+//                result = imint * 3;
             } else if (imint < 37) {
                 result = imint;
             } else if (imint < 365) {
