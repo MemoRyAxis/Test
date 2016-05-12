@@ -48,7 +48,9 @@ public class MrRedmine {
         params.put("project_id", "83");
         params.put("offset", "0");
         params.put("limit", "1000");
-        params.put("priority_id", "4");
+//        params.put("priority_id", "4");
+        params.put("sort", "tracker:desc");
+        params.put("sort", "subject:desc");
 
         List<Issue> issuesList = issueManager.getIssues(params);
         System.out.println(issuesList.size());
@@ -66,17 +68,18 @@ public class MrRedmine {
 
         log.info("最近上线日期: {}", new DateTime(dueDate).toString("yyyy-MM-dd"));
 
-        log.info("需要上线的任务: ");
         List<Issue> issuesToDo = new ArrayList<Issue>();
+        log.info("需要上线的任务: ");
         for (Issue issue : issuesList) {
             if (issue.getDueDate() != null && issue.getDueDate().equals(dueDate)) {
                 issuesToDo.add(issue);
                 // log.info("[{}] [{}%] {}", issue.getId(), issue.getDoneRatio(),
                 // issue.getSubject());
-                log.info("http://redmine.100credit.cn/issues/{}\t{}", issue.getId(),
-                        issue.getSubject());
+                log.info("http://redmine.100credit.cn/issues/{}\t{}\t{}", issue.getId(), issue
+                        .getTracker().getName(), issue.getSubject());
             }
         }
+        System.out.println(issuesToDo.size());
 
 
 
